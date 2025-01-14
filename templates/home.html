@@ -1,0 +1,26 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Job Post Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fake Job Post Detection</h1>
+            <p>Check if a job posting is genuine or fake by analyzing the job description.</p>
+        </header>
+        
+        <form action="/predict" method="POST">
+            <textarea name="job_description" placeholder="Enter job description here..."></textarea>
+            <button type="submit">Check</button>
+        </form>
+
+        <div id="result" style="display:none;"></div>
+    </div>
+</body>
+</html>
